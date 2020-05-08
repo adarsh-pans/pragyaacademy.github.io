@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Admission</title>
+	<link rel='shortcut icon' href='media/logo.jpg' type='image/x-icon'>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="javascript" type="text/js" href="js/custom.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body bgcolor="#F7F7F7">
+<!--
+	Created By: Adarsh Agrahari
+		 -->
+	<style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+.note{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form_wrapper{
+  width: 95%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #F7F7F7;
+}
+
+.form_1{
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.form_1 fieldset{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.form_1 legend{
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: Arial;
+  color: brown;
+  text-transform: uppercase;
+}
+
+.form_1 input, select{
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+
+
+.submit_btn{
+  margin-left: 60%;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #3C7AF8;
+  cursor: pointer;
+}
+
+
+.left_form{
+  font-size: 20px;
+  font-family: calibri;
+  padding-left: 70px;
+}
+
+
+.picture{
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F7F7F7;
+}
+
+.picture img{
+  margin-left: 90px;
+  margin-top: 150px;
+}
+
+@media (max-width: 640px){
+  .form_wrapper{
+    display: block;
+  }
+	.form_1{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .form_1 fieldset{
+    margin-left: 25px;
+  }
+
+  .left_form{
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+	.picture{
+		display: none;
+	}
+}
+
+	</style>
+
+  <!------------------------------------Heading-------------------------------------------->
+<a href="#heading_wrapper" class="gototopbtn"><i class="fa-arrow-up"></i></a>
+
+
+
+  
+<header>
+
+<div id="heading_wrapper">
+  <div id="left_heading">
+    <a href="index.html"><img src="D:\Computer\HTML\PANS WEB\media/logo.jpg"></a>
+    
+  </div>
+  <div id="right_heading">
+   <h1 class="main_heading" align="center"><a href="index.html" class="main_heading">PRAGYA ACADEMY NURSERY SCHOOL</a></h1>
+   <h3 class="second_heading" align="center"> Gayatri Pragya Dham, Kurwar-Sultanpur (Uttar Pradesh)</h3>
+  </div>
+  
+</div>
+</header>
+  <!------x-----------x----x----------x-Heading-x---------x----------x-------------x------->
+
+	<!----------------------------------Navigation Bar--------------------------------------->
+<div class="sticky">
+<div class="topnav" id="myTopnav">
+  <a href="admission.html" class="active">Online Admission</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="#">Staffs</a>
+  <a href="contacts.html">Contacts</a>
+  <a href="#">Results</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    <script src="js/custom.js"></script>
+  </a>
+</div>
+
+<div style="padding-left:16px"><br></div>
+</div>
+	<!------x--------------x---------x-----Navigation Bar------x-------------x----------------x---->
+
+
+
+                                                      <!-- behavior="alternate" -->
+	<hr>
+	<marquee class="note" scrollamount="8" onMouseOver="this.stop();"  onMouseOut="this.start();"> Note: Please Fill all the Informations in CAPITAL LETTERS only. This is not an Admission it is only for appling form. </marquee> 
+	<hr><br />
+<h4 align="center">For more infromation contact on <a href="telto:8601066000">+91 8601066000</a> or E-Mail on <a href="#">pragyaacademykurwar@gmail.com</a></h4>
+
+
+<div class="form_wrapper">
+  <div class="form_1">
+  <form name="admission_form" action="action_page.html" onsubmit="return validateForm()" method="post" required>  
+    <fieldset>
+
+      <legend>Admission Form</legend>
+      <table>
+        <tr class="t_row">
+          <td class="left_form">Name of Student:</td>
+          <td><input type="text" name="name" placeholder="Enter your full Name" id="name_of_student" required></td>
+        </tr>
+        <tr class="t_row">
+          <td class="left_form">Mother's Name:</td>
+          <td><input type="text" name="mo_name" placeholder="Enter your Mother's Name" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form" class="left_form" class="left_form">Father's Name:</td>
+          <td><input type="text" name="fa_name" placeholder="Enter your Father's Name" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form" class="left_form">Guardian's Name:</td>
+          <td><input type="text" name="gu_name" placeholder="Enter your Guardian's Name" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Local Address:</td>
+          <td><input type="text" name="l_address"  placeholder="Enter your Local Address" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Permanent Address:</td>
+          <td><input type="text" name="p_address"  placeholder="Enter your Permanent Address" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Date of Birth:</td>
+          <td><input type="date" name="dob" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Mobile Number:</td>
+          <td><input type="number" maxlength="10" name="mob_no" placeholder="Enter your Mobile Number" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form" class="left_form" class="left_form">Previous School:</td>
+          <td><input type="text" name="p_school" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form" class="left_form">Previous School Adress:</td>
+          <td><input type="text" name="p_school_address" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Previous Class:</td>
+          <td><Select required>
+            <option>--Select Previous Class--</option>
+            <option>P.G.</option>
+            <option>L.K.G.</option>
+            <option>U.K.G.</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+          </Select></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Class for the applied:</td>
+          <td><Select required>
+            <option>--Select Class--</option>
+            <option>P.G.</option>
+            <option>L.K.G.</option>
+            <option>U.K.G.</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+          </Select></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Previous Medium:</td>
+          <td><select required>
+            <option>--Select Medium--</option>
+            <option>English Medium</option>
+            <option>Hindi Medium</option>
+            <option>Other</option>
+          </select></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Religion:</td>
+          <td><input type="text" name="religion" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td class="left_form">Caste:</td>
+          <td><input type="text" name="caste" required></td>
+        </tr>
+
+        <tr class="t_row">
+          <td><input type="submit" name="submit" class="submit_btn"></td>
+          <td></td>
+        </tr>
+
+
+
+      </table>
+
+      
+
+
+
+
+
+
+    </fieldset>
+   </form>
+  </div>
+
+
+  <div class="picture">
+    <img src="media/admission.png" width="75%" height="400">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------- Footer Section ------------------------------------------>
+<footer>
+  <div class="footer_wrapper">
+   <div class="footer_container">
+    <div class="footer">
+      <div class="f_sec1">
+        <h3>About Us</h3>
+        <hr>
+        <div class="f_sec1_content"><!--f_sec1 => div-->
+        <p style="margin-bottom: 10px;">Hello Everyone, We are very glad to see you here. Visit us at Kurwar Bazar Sultanpur U.P.</p>
+        <h4 style="color: white; text-align: left; font-family: Calibri; font-size: 20px; font-weight: 4;">Contact Us-</h4>
+        <a href="telto: 8601066000">+91 8601066000</a><br>
+        <a href="mailto: pragyaacademysln@gmail.com">pragyaacademysln@gmail.com</a><br>
+
+        
+      </div><!--f_sec1 => div-->
+
+        
+      </div>
+      <div class="f_sec2">
+        <h3>Quick Links</h3><hr>
+        <div class="f_sec2_content"><!--f_sec2 => div-->
+        <ul>
+          <a href="about.html"><li>About Us</li></a>
+          <a href="staffs.html"><li>Staffs</li></a>
+          <a href="contacts.html"><li>Contact</li></a>
+          <a href="downloads.html"><li>Downloads</li></a>
+          <a href="comming_soon.html"><li>Results</li></a>
+        </ul>
+      </div><!--f_sec2 => div-->
+
+      </div>
+      <div class="f_sec3">
+        <h3>Contact Us</h3>
+        <hr>
+        <div style="margin-left: 10%; margin-top: 10px;">
+        <h5>Name:</h5>
+        <input type="text" name="contact_name" required><br>
+        <h5>Mobile No.:</h5>
+        <input type="number" name="contact_number" required maxlenght="10"><br>
+        <h5>Message:</h5>
+        <textarea name="contact_message" required></textarea>
+        <button onclick="close">Submit</button><br>
+      </div>
+        
+      </div>
+    </div>
+        <div style="width: 100%; color: white; text-align: center; background-color: #444343; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;"><p>All right reserved. Copyright &#169; Pragya Academy School 2020-21.</p> 
+        </div>  
+  </div>
+</div>
+
+
+
+</footer>
+  <!-------x----------x--------------x---------- Footer Section ----------x--------x------------x----->
+
+</body>
+
+<script type="text/javascript">
+
+
+
+
+
+/* Browser Says fill it 
+	function validateForm() {
+  var x = document.forms["admission_form"]["name"].value;
+  if (x == "") {
+    alert("Please enter your Name.");
+    return false;
+  }
+}
+
+ xxxx Browser Says fill it    xxxxxx*/ 
+</script>
+
+
+
+</html>

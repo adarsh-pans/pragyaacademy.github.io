@@ -1,0 +1,184 @@
+ *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 100%;
+}
+
+.navbar{
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	background-color: #353535;
+	display: flex;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+}
+
+.navbar img{
+	width: 40px;
+	height: 45px;
+	margin-left: 15px;
+}
+
+.heading{
+	padding-left: 300px;
+	font-size: 32px;
+	font-family: Constantia;
+	color: white;
+}
+
+.content{
+	display: flex;
+}
+
+.section1{
+	width: 60%;
+	background-color: black;
+}
+
+.section2{
+	width: 40%;
+	height: 100vh;
+	background-color: #F1F1F1;
+	
+}
+
+video{
+	margin: 80px auto 0 auto;
+	display: block;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.vid_title{
+	font-family: Arial;
+	margin-left: 35px;
+	padding-top: 20px;
+	font-size: 28px;
+	color: white;
+}
+
+.vid_discription{
+	font-family: Arial;
+	margin-left: 35px;
+	padding-top: 5px;
+	font-size: 14px;
+	padding-right: 55px;
+	color: white;
+}
+
+.hr_line{
+	width: 95%;
+	margin: 15px 0 15px 2.5%;
+}
+
+.comments{
+	width: 100%;
+}
+
+.account{
+	display: flex;
+}
+
+.comments img{
+	width: 50px;
+	height: 50px;
+	margin: 20px 0 0 35px;
+	border-radius: 50%;
+}
+
+.comments h4, p{
+	color: white;
+	font-family: Calibri;
+}
+
+.comments input{
+	width: 70%;
+	height: 30px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid white;
+	background-color: black;
+	margin: 20px 0 20px 35px;
+	padding: 0 15px;
+	color: white;
+}
+
+.comments button{
+	width: 7%;
+	height: 30px;
+	border: none;
+	margin-left: 40px;
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+}
+
+.comments button:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section2 */
+.ask{
+	width: 100%;
+	height: 50px;
+	background-color: #F1F1F1;
+	padding-top: 10px;
+	padding-left: 50px;
+	position: fixed;
+	bottom: 0;
+}
+
+.ask_doubt{
+	width: 400px;
+	height: 30px;
+	border-radius: 30px;
+	padding: 0 10px 0 10px;
+	border: 1px solid black;
+}
+
+.ask_btn{
+	width: 60px;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+	background-color: #E7440B;
+	padding: 0 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.ask_btn:hover{
+	background-color: #20E70B;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+
+}
+/* x x x  Section2 x x x */

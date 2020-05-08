@@ -1,0 +1,599 @@
+<html>
+<head>
+        <title>Highest Percentage of all Sessions</title>
+        <link rel='shortcut icon' href='media/logo.jpg' type='image/x-icon'>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"><!-- Google Font -->
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content_wrapper{
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: coral;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+/* ----------------------------------------- Tab Bar Section------------------------------------- */
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+}
+
+#defaultOpen{
+  border-top-left-radius: 10px;
+}
+
+#border_top{
+  border-top-right-radius: 10px; 
+}
+
+.tablink:hover {
+  background-color: #777;
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+}
+
+.content_tab{
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+/* -----------x--------------x------------x Tab Bar Section x----------x--------------x----------- */
+
+table{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  /*background-color: #4E7C6B;*/
+}
+
+.head1{
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  width: 20%;
+  background-color: #4E7C6B;
+}
+
+.head2{
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  width: 50%;
+  background-color: #4E7C6B;
+}
+
+.head3{
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  width: 30%;
+  background-color: #4E7C6B;
+}
+
+.class{
+  width: 20%;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.st_name{
+  width: 50%;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.per{
+  width: 30%;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.odd{
+  color: white;
+}
+
+.even{
+  color: black;
+}
+
+@media (max-width: 640px){
+  .content_wrapper{
+    background-color: coral;
+}
+
+  .head1{
+  font-size: 15px;
+}
+
+.head2{
+  font-size: 15px;
+}
+
+.head3{
+  font-size: 15px;
+}
+
+.class{
+  font-size: 13px;
+}
+
+.st_name{
+  font-size: 13px;
+}
+
+.per{
+  font-size: 13px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+    <!------------------------------------Heading-------------------------------------------->
+<a href="#heading_wrapper" class="gototopbtn"><i class="fa-arrow-up"></i></a>
+
+
+
+
+<div class="icon-bar">
+  <a href="facebook.com/pragyaacademynurseryschool" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="twitter.com/PragyaAcademyNS" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+  
+<header>
+       <!-- <div id="social_nav">
+          <ul>
+            <a href="youtube.com/" target="_blank"><li><i class="fa fa-fw fa-youtube"></i></li></a>
+            <a href="facebook.com/pragyaacademynurseryschool" target="_blank"><li><i class="fa fa-fw fa-facebook"></i></li></a>
+            <li><i class="fa fa-fw fa-web"></i></li>
+          </ul>
+        </div>-->
+        
+        
+        <div id="heading_wrapper">
+          <div id="left_heading">
+            <a href="index.html"><img src="D:\Computer\HTML\PANS WEB\media/logo.jpg"></a>
+            
+          </div>
+          <div id="right_heading">
+           <h1 class="main_heading" align="center"><a href="index.html" class="main_heading">PRAGYA ACADEMY NURSERY SCHOOL</a></h1>
+           <h3 class="second_heading" align="center"> Gayatri Pragya Dham, Kurwar-Sultanpur (Uttar Pradesh)</h3>
+          </div>
+          
+        </div>
+        </header>
+          <!------x-----------x----x----------x-Heading-x---------x----------x-------------x------->
+        
+        
+        
+          <!----------------------------------Navigation Bar--------------------------------------->
+        <div class="sticky">
+        <div class="topnav" id="myTopnav">
+          <a href="record_percentage.html" class="active">Records</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="staffs.html">Staffs</a>
+          <a href="contacts.html">Contacts</a>
+          <a href="admission.html">Online Admission</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        
+        <div><br></div>
+        </div>
+        
+        
+          <!------x--------------x---------x-----Navigation Bar------x-------------x----------------x---->
+
+
+
+
+    <div class="content_wrapper">
+
+        <div id="tab">
+            <button class="tablink" onclick="openPage('y2019-20', this, '#089CD6') "id="defaultOpen">2019-20</button>
+            <button class="tablink" onclick="openPage('y2018-19', this, '#40e72ae0')">2018-19</button>
+            <button class="tablink" onclick="openPage('y2017-18', this, '#f51384e0')" id="border_top">2017-18</button>
+
+
+        
+<!-- Session 2019-20 -->        
+        <div id="y2019-20" class="tabcontent">
+            <div class="content_tab">
+                <table width="800" cellpadding="10" cellspacing="5">
+                  <tr>
+                      <th class="head1">Class</th>
+                      <th class="head2">Name of Student</th>
+                      <th class="head3">Obtained Percentage</th>
+                  </tr>
+
+                  <tr class="odd">
+                      <td class="class">8th</td>
+                      <td class="st_name"></td>
+                      <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">7th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+
+                  <tr class="odd">
+                    <td class="class">6th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">5th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">4th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">3rd</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">2nd</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">1st</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">U.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">L.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">P.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                </table>
+            </div>
+        </div>
+<!--x Session 2019-20 x-->
+
+
+
+<!-- Session 2018-19 -->
+        <div id="y2018-19" class="tabcontent">
+            <div class="content_tab">
+                <table width="800" cellpadding="10" cellspacing="5">
+                  <tr>
+                      <th class="head1">Class</th>
+                      <th class="head2">Name of Student</th>
+                      <th class="head3">Obtained Percentage</th>
+                  </tr>
+
+                  <tr class="odd">
+                      <td class="class">8th</td>
+                      <td class="st_name">Adarsh Agrahari</td>
+                      <td class="per">93.00%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">7th</td>
+                    <td class="st_name">Shreya Singh</td>
+                    <td class="per">%</td>
+                  </tr>
+
+
+                  <tr class="odd">
+                    <td class="class">6th</td>
+                    <td class="st_name">Alok Agrahari</td>
+                    <td class="per">97.00%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">5th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">4th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">3rd</td>
+                    <td class="st_name">Aryan Maurya</td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">2nd</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">1st</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">U.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">L.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">P.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                </table>
+            </div>
+        </div>
+<!--x Session 2018-19 x-->
+
+
+
+<!-- Session 2017-18 -->
+        <div id="y2017-18" class="tabcontent">
+            <div class="content_tab">
+                <table width="800" cellpadding="10" cellspacing="5">
+                  <tr>
+                    <th class="head1">Class</th>
+                    <th class="head2">Name of Student</th>
+                    <th class="head3">Obtained Percentage</th>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">7th</td>
+                    <td class="st_name">Adarsh Agrahari</td>
+                    <td class="per">%</td>
+                  </tr>
+
+
+                  <tr class="even">
+                    <td class="class">6th</td>
+                    <td class="st_name">Shreya Singh</td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">5th</td>
+                    <td class="st_name">Alok Agrahari</td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">4th</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">3rd</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">2nd</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">1st</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">U.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="odd">
+                    <td class="class">L.K.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+
+                  <tr class="even">
+                    <td class="class">P.G.</td>
+                    <td class="st_name"></td>
+                    <td class="per">%</td>
+                  </tr>
+                </table>
+
+            </div>
+        </div>
+<!--x Session 2017-18 x-->
+        
+        </div><!-- Tab -->
+
+    </div> <!-- Content_wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+          	<!------------------------------------------- Footer Section --------------------------------------->
+<footer>
+        <div class="footer_wrapper">
+         <div class="footer_container">
+          <div class="footer">
+            <div class="f_sec1">
+              <h3>About Us</h3>
+              <hr>
+              <div class="f_sec1_content"><!--f_sec1 => div-->
+              <p style="margin-bottom: 10px;">Hello Everyone, We are very glad to see you here. Visit us at Kurwar Bazar Sultanpur U.P.</p>
+              <h4 style="color: white; text-align: left; font-family: Calibri; font-size: 20px; font-weight: 4;">Contact Us-</h4>
+              <a href="telto: 8601066000">+91 8601066000</a><br>
+              <a href="mailto: pragyaacademysln@gmail.com">pragyaacademysln@gmail.com</a><br>
+              
+            </div><!--f_sec1 => div-->
+      
+              
+            </div>
+            <div class="f_sec2">
+              <h3>Quick Links</h3><hr>
+              <div class="f_sec2_content"><!--f_sec2 => div-->
+              <ul>
+                <a href="about.html"><li>About Us</li></a>
+                <a href="staffs.html"><li>Staffs</li></a>
+                <a href="contacts.html"><li>Contact</li></a>
+                <a href="admission.html"><li>Online Admission</li></a>
+                <a href="#"><li>Results</li></a>
+              </ul>
+            </div><!--f_sec2 => div-->
+      
+            </div>
+            <div class="f_sec3">
+              <h3>Contact Us</h3>
+              <hr>
+              <div style="margin-left: 10%; margin-top: 10px;">
+              <h5>Name:</h5>
+              <input type="text" name="contact_name" required><br>
+              <h5>Mobile No.:</h5>
+              <input type="number" name="contact_number" required maxlenght="10"><br>
+              <h5>Message:</h5>
+              <textarea name="contact_message" required></textarea>
+              <button onclick="close">Submit</button><br>
+            </div>
+              
+            </div>
+          </div>
+              <div style="width: 100%; color: white; text-align: center; background-color: #444343; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;"><p>All right reserved. Copyright &#169; Pragya Academy School 2020-21.</p>
+                 
+              </div>  
+        </div>
+      </div>
+      
+      
+      
+      </footer>
+          <!-------x----------x--------------x---------- Footer Section ----------x--------x------------x----->
+
+</body>
+
+<script>
+// ----------------------------------------------- Navigation Bar --------------------------------------
+// Responsive
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} // Responsive
+// ------x---------------x-------------x--------- Navigation Bar -----------x-----------x---------------
+
+
+
+
+
+
+// Tabs
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+// Tabs
+</script>
+</html>
